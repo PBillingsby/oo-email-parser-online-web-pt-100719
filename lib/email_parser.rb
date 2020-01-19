@@ -7,6 +7,6 @@ class EmailAddressParser
   attr_accessor :emails
   def initialize(emails)
     @emails = emails
-    binding.pry
+    emails.split(", ").join(" ")
   end
 end
